@@ -1,0 +1,5 @@
+export const ACTION = {
+    GET_LOADING     : "GET_LOADING ",
+    GET_ALL_ROOM    : "GET_ALL_ROOM ",
+    GET_ALL_ROOM_SUCCESS   : "GET_ALL_ROOM_SUCCESS ",
+}
