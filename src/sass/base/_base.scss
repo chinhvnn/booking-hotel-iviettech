@@ -1,10 +1,12 @@
-*, *::before, *::after{
+*,
+*::before,
+*::after {
     box-sizing: border-box;
 }
 
 html {
     margin: 0;
-    font-family: "Roboto", sans-serif;
+    font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
 body {
@@ -23,71 +25,131 @@ ul {
 }
 
 // link
-a{
+a {
     text-decoration: none;
+    color: rgb(173, 154, 182)
+}
+
+a:visited {
     color: rgb(224, 167, 247)
 }
 
-a:visited{
-    color: rgb(224, 167, 247)
-}
-
-a:hover{
+a:hover {
     color: white
 }
 
-// title header
-h1, h2, h3, h4, h5 {
+.disable-link{
+    pointer-events: none;
+}
+
+// handle document
+h1,
+h2,
+h3,
+h4,
+h5 {
     margin: 0.25rem;
 }
 
+p {
+    margin: 0.15rem;
+}
+
+.uppercase{
+    text-transform: uppercase;
+}
+
+.bold {
+    font-weight: bold;
+}
+
 // COLOR
-@each $color, $val in $color-list {
-    .color-#{$color}{
-        color : $val;
+@each $color,
+$val in $color-list {
+    .color-#{$color} {
+        color: $val;
     }
 }
 
 // MARGIN _ PADING
-$arr : (
-    1: 0.25rem,
+$arr : (1: 0.25rem,
     2: 0.5rem,
     3: 1rem,
     4: 1.5rem,
     5: 3rem,
 );
-@each $id, $val in $arr {
-    .m-#{$id}{
+
+@each $id,
+$val in $arr {
+    .m-#{$id} {
         margin: $val;
     }
-    .mb-#{$id}{
+
+    .mb-#{$id} {
         margin-bottom: $val;
     }
-    .mt-#{$id}{
+
+    .mt-#{$id} {
         margin-top: $val;
     }
-    .mr-#{$id}{
+
+    .mr-#{$id} {
         margin-right: $val;
     }
-    .ml-#{$id}{
+
+    .ml-#{$id} {
         margin-left: $val;
     }
-    .p-#{$id}{
+
+    .p-#{$id} {
         padding: $val;
     }
-    .pb-#{$id}{
+
+    .pb-#{$id} {
         padding-bottom: $val;
     }
-    .pt-#{$id}{
+
+    .pt-#{$id} {
         padding-top: $val;
     }
-    .pr-#{$id}{
+
+    .pr-#{$id} {
         padding-right: $val;
     }
-    .pl-#{$id}{
+
+    .pl-#{$id} {
         padding-left: $val;
     }
 }
+
+
+.table {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 1rem;
+    background-color: rgb(0 0 0 / 0%);
+    border-collapse: collapse;
+
+    thead th {
+        vertical-align: middle;
+        border-bottom: 2px solid rgb(222 226 230);
+    }
+
+    td,
+    th {
+        padding: 0.75rem;
+        vertical-align: middle;
+        border-top: 1px solid rgb(222 226 230);
+        text-align: center;
+    }
+}
+
+
+
+
+
+
+
 
 .border {
     border: 1px red solid;

@@ -7,19 +7,14 @@ export const actGetLoading = (boolean) => {
   };
 };
 
-export const actGetAllRoomSuccess = (data) => {
+export const actGetAllOverViewSuccess = (data) => {
   return {
-    type: ACTION.GET_ALL_ROOM_SUCCESS,
+    type: ACTION.GET_ALL_OVERVIEW_SUCCESS,
     payload: data,
   };
 };
 
-export const actGetAllServiceSuccess = (data) => {
-  return {
-    type: ACTION.GET_ALL_SERVICE_SUCCESS,
-    payload: data,
-  };
-};
+
 
 
 

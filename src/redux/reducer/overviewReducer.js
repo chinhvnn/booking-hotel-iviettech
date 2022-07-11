@@ -2,27 +2,21 @@ import { ACTION } from "../../constants/ACTION";
 //init state
 const initState = {
   isLoading: true,
-  roomData: [],
-  roomServiceData: [],
+  overview: [],
 };
 
 //reducer
-const roomReducer = (state = initState, action) => {
+const overviewReducer = (state = initState, action) => {
   switch (action.type) {
     case ACTION.GET_LOADING:
       return {
         ...state,
         isLoading: action.payload,
       };
-    case ACTION.GET_ALL_ROOM_SUCCESS:
+    case ACTION.GET_ALL_OVERVIEW_SUCCESS:
       return {
         ...state,
-        roomData: action.payload,
-      };
-    case ACTION.GET_ALL_SERVICE_SUCCESS:
-      return {
-        ...state,
-        roomServiceData: action.payload,
+        overview: action.payload,
       };
 
     default:
@@ -30,4 +24,4 @@ const roomReducer = (state = initState, action) => {
   }
 };
 
-export default roomReducer;
+export default overviewReducer;

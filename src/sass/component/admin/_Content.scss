@@ -1,0 +1,88 @@
+.admin-content {
+    margin-left: 250px;
+    margin-top: 50px;
+    padding: 30px;
+    background-color: $main-bg;
+    
+    .breadcrumb {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .box-page {
+        background-color: $second-bg;
+        margin: 15px 0px 15px 0px;
+        padding: 15px;
+        border: 1px grey solid;
+        border-radius: 10px;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+    }
+    
+    .stat-box {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        height: 150px;
+        &-col{
+            flex: 0 0 percentage(1/4);
+            padding: 8px;
+        }
+        &-item1{
+            background-color: rgb(23 162 184);
+            border: rgb(160, 166, 172) 1px solid;
+            border-radius: 5px;
+            height: 100%;
+            box-shadow: 0 0 1px rgb(0 0 0 / 13%), 0 1px 3px rgb(0 0 0 / 20%);
+        }
+        &-item2{
+            background-color: green;
+            border: rgb(160, 166, 172) 1px solid;
+            border-radius: 5px;
+            height: 100%;
+            box-shadow: 0 0 1px rgb(0 0 0 / 13%), 0 1px 3px rgb(0 0 0 / 20%);
+        }
+        &-item3{
+            background-color: rgb(255 193 7);
+            border: rgb(160, 166, 172) 1px solid;
+            border-radius: 5px;
+            height: 100%;
+            box-shadow: 0 0 1px rgb(0 0 0 / 13%), 0 1px 3px rgb(0 0 0 / 20%);
+        }
+        &-item4{
+            background-color: rgb(220 53 69);;
+            border: rgb(160, 166, 172) 1px solid;
+            border-radius: 5px;
+            height: 100%;
+            box-shadow: 0 0 1px rgb(0 0 0 / 13%), 0 1px 3px rgb(0 0 0 / 20%);
+        }
+    }
+
+    // link
+    a {
+        text-decoration: none;
+        color: rgb(58, 34, 146)
+    }
+
+    a:visited {
+        color: rgb(58, 34, 146)
+    }
+
+    a:hover {
+        color: rgb(232, 125, 11)
+    }
+
+    // HEADER SEARCH
+    .form-header-content {}
+
+    // ROOM MANAGER
+
+    .room {
+        display: flex;
+        justify-content: space-between;
+        border: 1px solid dodgerblue;
+        border-radius: 10px;
+        min-height: 50px;
+        padding: 10px;
+        margin-top: 10px;
+    }
+}

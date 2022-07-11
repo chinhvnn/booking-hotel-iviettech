@@ -6,7 +6,7 @@
 }
 
 //ROW FLEX DISPLAY
-.row-flex {
+.d-flex {
         position: relative;
         display: -webkit-box;
         display: -ms-flexbox;
@@ -14,10 +14,6 @@
         -ms-flex-wrap: wrap;
         flex-wrap: wrap;
         // border: 1px rgb(212, 101, 101) solid
-}
-
-.flex-col{
-        flex-direction: column;
 }
 
 .a-items-center { 

@@ -1,0 +1,56 @@
+.left-side-bar {
+    position: fixed;
+    top : 50px;
+    z-index: 10;
+    transition: margin-left .3s ease-in-out, width .3s ease-in-out;
+    width: 250px;
+    height: 100vh;
+    padding: 10px;
+
+    background-color: rgb(52 58 64);
+    color: rgb(194 199 208);
+
+    .nav-header {
+        overflow: hidden;
+        text-overflow: clip;
+    }
+
+    .nav-icon {
+        margin-left: 0.05rem;
+        font-size: 1.2rem;
+        margin-right: 0.25rem;
+        text-align: center;
+        width: 1.6rem;
+    }
+
+    .nav-link {
+        position: relative;
+        display: block;
+        padding: 0.5rem 1rem;
+        border-radius: 0.25rem;
+
+        &:focus {
+            background-color: rgb(255 255 255 / 10%);
+            color: rgb(255 255 255);
+        }
+
+        &:hover {
+            background-color: rgb(255 255 255 / 10%);
+            color: rgb(255 255 255);
+        }
+
+        p {
+            display: inline;
+            margin: 0;
+            white-space: normal;
+        }
+
+        
+
+        &-right {
+            position: absolute;
+            right: 1rem;
+            top: 0.7rem;
+        }
+    }
+}
